@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Eduma/static/css/main.23f5cc1f.css",
-    "main.js": "/Eduma/static/js/main.362e131a.js",
+    "main.js": "/Eduma/static/js/main.a80feb8f.js",
     "static/js/453.bb17dcb0.chunk.js": "/Eduma/static/js/453.bb17dcb0.chunk.js",
     "static/media/background.png": "/Eduma/static/media/background.d963b0761a7264e408d6.png",
     "static/media/AiImage.png": "/Eduma/static/media/AiImage.d1a93eb0b7c2bb0bdb41.png",
@@ -20,11 +20,11 @@
     "static/media/Img1.png": "/Eduma/static/media/Img1.ef3b1d6c4f493ae810e4.png",
     "index.html": "/Eduma/index.html",
     "main.23f5cc1f.css.map": "/Eduma/static/css/main.23f5cc1f.css.map",
-    "main.362e131a.js.map": "/Eduma/static/js/main.362e131a.js.map",
+    "main.a80feb8f.js.map": "/Eduma/static/js/main.a80feb8f.js.map",
     "453.bb17dcb0.chunk.js.map": "/Eduma/static/js/453.bb17dcb0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23f5cc1f.css",
-    "static/js/main.362e131a.js"
+    "static/js/main.a80feb8f.js"
   ]
 }
