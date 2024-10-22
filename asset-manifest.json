@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Eduma/static/css/main.23f5cc1f.css",
+    "main.js": "/Eduma/static/js/main.362e131a.js",
+    "static/js/453.bb17dcb0.chunk.js": "/Eduma/static/js/453.bb17dcb0.chunk.js",
+    "static/media/background.png": "/Eduma/static/media/background.d963b0761a7264e408d6.png",
+    "static/media/AiImage.png": "/Eduma/static/media/AiImage.d1a93eb0b7c2bb0bdb41.png",
+    "static/media/Enroll.png": "/Eduma/static/media/Enroll.ec4adab61e4e5272642a.png",
+    "static/media/slide.png": "/Eduma/static/media/slide.0052492cb9bfcac67f21.png",
+    "static/media/large1.png": "/Eduma/static/media/large1.91f72e0581ff5e5efbcb.png",
+    "static/media/large2.png": "/Eduma/static/media/large2.afa0eaf538a5cd7fa9bc.png",
+    "static/media/img5.png": "/Eduma/static/media/img5.40048265e8059982c840.png",
+    "static/media/large3.png": "/Eduma/static/media/large3.f06b02748e959a693fb2.png",
+    "static/media/small2.png": "/Eduma/static/media/small2.6645dd4892d2b1e526e8.png",
+    "static/media/small1.png": "/Eduma/static/media/small1.97139d7a1df09c4ba1b2.png",
+    "static/media/img2.png": "/Eduma/static/media/img2.6bc4738d13f2c401139c.png",
+    "static/media/small3.png": "/Eduma/static/media/small3.5081dbdc24c0e4219fd3.png",
+    "static/media/img3.png": "/Eduma/static/media/img3.2b669a48f58735b066a2.png",
+    "static/media/img4.png": "/Eduma/static/media/img4.13ac6a75eafd73401345.png",
+    "static/media/Img1.png": "/Eduma/static/media/Img1.ef3b1d6c4f493ae810e4.png",
+    "index.html": "/Eduma/index.html",
+    "main.23f5cc1f.css.map": "/Eduma/static/css/main.23f5cc1f.css.map",
+    "main.362e131a.js.map": "/Eduma/static/js/main.362e131a.js.map",
+    "453.bb17dcb0.chunk.js.map": "/Eduma/static/js/453.bb17dcb0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23f5cc1f.css",
+    "static/js/main.362e131a.js"
+  ]
+}
