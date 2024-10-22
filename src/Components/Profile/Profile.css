@@ -1,0 +1,128 @@
+/* Base Styles */
+.profile-container {
+  background-color: #0a1128; /* Dark blue background */
+  color: #ffffff; /* White text */
+  padding: 50px 20px; /* Reduced padding for smaller devices */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-header {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column; /* Stack content vertically on smaller devices */
+  align-items: center;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.profile-picture {
+  flex-shrink: 0;
+}
+
+.profile-picture img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-info {
+  flex: 1;
+  text-align: center;
+}
+
+.my-story,
+.my-experience,
+.brands-worked-with {
+  margin-bottom: 30px;
+}
+
+.my-story h2,
+.my-experience h2,
+.brands-worked-with h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.my-experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+.my-experience li {
+  margin-bottom: 10px;
+  display: flex;
+  
+}
+
+.my-experience li::before {
+  content: '●';
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.brands {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.brands img {
+  width: 60px;
+  height: auto;
+  filter: grayscale(1);
+  transition: filter 0.3s ease;
+}
+
+.brands img:hover {
+  filter: grayscale(0);
+}
+
+/* Medium Devices (Tablets and small desktops) */
+@media (min-width: 768px) {
+  .profile-content {
+    flex-direction: row; /* Align side-by-side on tablets */
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .profile-picture img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .profile-info {
+    text-align: left;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) {
+  .profile-header {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+
+  .profile-picture img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .brands img {
+    width: 80px;
+  }
+
+  .profile-content {
+    gap: 50px;
+  }
+}

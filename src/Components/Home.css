@@ -1,0 +1,16 @@
+.div{
+    background-color:#0b1126 ;
+}
+@media (max-width: 1024px) {
+    .div{
+    margin-top: 30px;
+}
+
+}
+
+@media (max-width: 768px) {
+    .div{
+    margin-top: 70px;
+}
+
+}

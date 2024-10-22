@@ -1,0 +1,72 @@
+.waitlist-banner {
+    position: relative;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlays {
+    position: absolute; /* Position overlay absolutely */
+    top: 0; /* Cover the entire area */
+    left: 0; /* Cover the entire area */
+    right: 0; /* Cover the entire area */
+    bottom: 0; /* Cover the entire area */
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better contrast */
+    display: flex; /* Center content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  .content {
+    text-align: center;
+    color: white; /* Ensure text is white */
+    max-width: 600px; /* Optional: limit content width */
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .hy{
+    color: #e6a700;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: gray;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .email-input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .waitlist-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffb800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  .waitlist-button:hover {
+    background-color: #e6a700;
+  }
+  

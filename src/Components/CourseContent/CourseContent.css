@@ -1,0 +1,179 @@
+.course-content-container {
+  background-color: #0b1126;
+  color: white;
+  padding: 40px;
+  max-width: 1200px; /* Increased max-width for larger screens */
+  margin: 0 auto;
+}
+
+/* Base Styles */
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.course-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1b223a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-item span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.course-list {
+  background-color: #1b223a;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.course-item {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #333a5a;
+  padding: 20px 0;
+}
+
+.course-item:last-child {
+  border-bottom: none;
+}
+
+.course-number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9a01a;
+  margin-right: 20px;
+}
+
+.course-details h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.course-lectures {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.course-description {
+  font-size: 14px;
+  color: #b0b5d3;
+}
+
+/* 4K Screens (2560px and above) */
+@media (max-width: 2560px) {
+  .course-content-container {
+    max-width: 1800px; /* Increase container width for 4K */
+    padding: 60px;
+  }
+
+  h1 {
+    font-size: 42px; /* Increase heading size */
+  }
+
+  .course-info {
+    padding: 30px;
+  }
+
+  .info-item span {
+    font-size: 18px; /* Slightly larger text for clarity */
+  }
+
+  .course-item {
+    padding: 30px 0; /* More padding for spacing */
+  }
+
+  .course-number {
+    font-size: 28px; /* Larger course number for better visibility */
+  }
+
+  .course-details h2 {
+    font-size: 24px;
+  }
+
+  .course-description {
+    font-size: 16px; /* Slightly larger description text */
+  }
+}
+
+/* Large screens (up to 900px) */
+@media (max-width: 900px) {
+  .course-content-container {
+    padding: 20px;
+  }
+
+  .course-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .course-item {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .course-number {
+    font-size: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .course-details h2 {
+    font-size: 18px;
+  }
+
+  .course-description {
+    font-size: 13px;
+  }
+}
+
+/* Medium screens (up to 600px) */
+@media (max-width: 600px) {
+  .course-content-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .course-info {
+    flex-direction: column;
+  }
+
+  .info-item {
+    margin-bottom: 20px;
+  }
+
+  .course-item {
+    flex-direction: column;
+  }
+
+  .course-number {
+    font-size: 18px;
+  }
+
+  .course-details h2 {
+    font-size: 16px;
+  }
+
+  .course-description {
+    font-size: 12px;
+  }
+}

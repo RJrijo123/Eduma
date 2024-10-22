@@ -1,0 +1,172 @@
+/* General styling for the navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0b1126;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-left: 10%;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05); /* Slight hover effect */
+}
+
+/* Hamburger icon styling for mobile view */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.hamburger:hover {
+  color: #FFB606;
+}
+
+/* Overlay styling */
+.navbar-overlay {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 17, 38, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: left 0.4s ease;
+  z-index: 999;
+}
+
+.navbar-overlay.active {
+  left: 0; /* Make the overlay slide in */
+}
+
+/* Close icon (FaTimes) styling */
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it stays on top of the overlay */
+  font-size: 30px; /* Ensure it's big enough to be visible */
+  display: flex;
+}
+
+.close-icon:hover {
+  color: #FFB606;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar-item {
+  margin: 0;
+}
+
+.navbar-link {
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #FFB606;
+  transform: scale(1.1); /* Hover animation */
+}
+
+.start-button {
+  background-color: #FFB606;
+  color: #0b1126;
+  font-size: 13px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #e6a305;
+  transform: scale(1.05);
+}
+@media (max-width: 1180px) {
+  .start-button {
+      display: none;
+  }
+}
+/* Responsive styling */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  
+  .navbar-brand img {
+    height: 30px;
+  }
+  
+  /* Full-screen menu for mobile */
+  .navbar-overlay {
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(11, 17, 38, 0.95); /* Dark semi-transparent background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .navbar-overlay.active {
+    left: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-overlay {
+    left: 0; /* Ensure the overlay is visible */
+    background-color: transparent; /* Make it transparent on larger screens */
+    display: flex;
+    justify-content: flex-end; /* Align the menu to the right */
+    height: auto;
+    position: static; /* Static positioning on larger screens */
+    width: auto;
+    flex-direction: row; /* Arrange items in a row */
+  }
+  
+  .navbar-menu {
+    flex-direction: row;
+    gap: 50px; /* Reduce gap between items */
+  }
+
+  .navbar-link {
+    font-size: 18px;
+  }
+
+  .hamburger {
+    display: none; /* Hide hamburger icon on larger screens */
+  }
+}

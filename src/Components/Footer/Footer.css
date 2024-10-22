@@ -1,0 +1,32 @@
+.footer {
+    background-color: #07142C; /* Dark navy background */
+    color: #fff;               /* White text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    margin-top: 30px;
+  }
+  
+  .footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px; /* Space between icons */
+  }
+  
+  .icon {
+    font-size: 24px; /* Icon size */
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    color: #8c92e6; /* Hover effect to match preferred color */
+  }
+  

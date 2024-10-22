@@ -1,0 +1,134 @@
+.enrollment-container {
+  background-color: #0e1624;
+  color: #fff;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.enrollment-header {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.enrollment-header div {
+  text-align: center;
+  flex: 1; /* Allow equal distribution */
+}
+
+/* Content Styles */
+.enrollment-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.enrollment-step {
+  background-color: #19213a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  box-sizing: border-box;
+  margin: 10px; /* Add margin for spacing */
+}
+
+/* Step Heading Styles */
+.enrollment-step h3 {
+  color: #ffc107;
+}
+
+/* Form Styles */
+.enrollment-form input,
+.enrollment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #273046;
+  color: #fff;
+}
+
+/* Button Styles */
+.enroll-button {
+  background-color: #ffc107;
+  color: #000;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Payment Info Styles */
+.payment-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.payment-info li {
+  margin-bottom: 5px;
+}
+
+.qr-code {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.qr-code img {
+  max-width: 150px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .enrollment-header {
+    flex-direction: column; /* Stack header items vertically */
+    align-items: center; /* Center align header items */
+  }
+
+  .enrollment-step {
+    width: 100%; /* Full width for smaller screens */
+    margin: 10px 0; /* Vertical margin for spacing */
+  }
+}
+
+@media (max-width: 900px) {
+  .enrollment-header div {
+    margin-bottom: 15px; /* Space between header items */
+  }
+
+  .enrollment-step {
+    width: 90%; /* Wider steps for better usability */
+    margin: 15px auto; /* Center alignment */
+  }
+
+  .enrollment-step h3 {
+    font-size: 24px; /* Adjust heading size */
+  }
+}
+
+@media (max-width: 600px) {
+  .enrollment-container {
+    padding: 15px; /* Less padding for smaller devices */
+  }
+
+  .enrollment-step {
+    width: 100%; /* Full width on mobile devices */
+  }
+
+  .enrollment-header div {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .enroll-button {
+    padding: 12px; /* Slightly larger button padding */
+  }
+
+  .qr-code img {
+    max-width: 100px; /* Smaller QR code image on mobile */
+  }
+}

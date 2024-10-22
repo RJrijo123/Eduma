@@ -1,0 +1,117 @@
+.expect-section {
+  background-color: #10142e;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.expect-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.expect-card {
+  background-color: #1a1f40;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: left;
+}
+
+.expect-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.expect-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.expect-card ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+.expect-card ul li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+  color: #fdbb2d;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+
+/* 4K (2560px and up) */
+@media (min-width: 1541px) and (max-width: 2560px) {
+  .section-title {
+    font-size: 3.5rem; /* Larger title for 4K */
+    margin-bottom: 50px;
+  }
+
+  .expect-card {
+    width: 600px; /* Increase card width */
+    padding: 30px; /* Add more padding for large screens */
+  }
+
+  .expect-card h3 {
+    font-size: 2rem; /* Larger card titles */
+  }
+
+  .expect-card ul li::before {
+    font-size: 1.2rem; /* Increase size of the check icon */
+  }
+
+  .expect-cards-container {
+    gap: 100px; /* Increase space between cards */
+  }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .expect-card {
+    width: 250px;
+  }
+}
+
+/* Small Screens (Large Phones and Small Tablets) */
+@media (max-width: 768px) {
+  .expect-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .expect-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* Extra Small Screens (Phones) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .expect-card {
+    padding: 15px;
+  }
+
+  .expect-card h3 {
+    font-size: 1.2rem;
+  }
+}
